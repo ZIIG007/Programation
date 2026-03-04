@@ -1,19 +1,40 @@
 .meu-topo {
     background-color: #333;       /* Cor de fundo do retângulo */
-    color: white;                 /* Cor do texto */
     display: flex;                  /* Ativa o modo "lado a lado" */
     justify-content: space-between; /* Joga o nome pra esquerda e botões pra direita */
     align-items: center;            /* Alinha tudo no centro verticalmente */
-    padding: 10px 40px;             /* Espaçamento interno (respiro) */
+    padding: 15px 40px;              /* Espaçamento interno (respiro) */
+    width: 100%;                    /* Ocupe a largura total */
+    box-sizing: border-box;         /* Evita que o padding "estique" o cabeçalho para fora da tela */
 }
 
+.logo-topo {
+    color: white !important;      /* Força a cor branca para aparecer no fundo escuro */
+    margin: 0;                      /* Remove a margem que estica o cabeçalho */
+    font-size: 1.8rem;              /* Deixa o nome menor para caber na barra */
+    font-weight: bold;
+}
+
+.botao {
+    text-decoration: none;          /* Remove o sublinhado padrão de link */
+    color: white;                 /* Cor do texto do botão */
+    border: 2px solid white;      /* Cria a borda do "quadrado" */
+    padding: 10px 20px;              /* Dá tamanho ao botão */
+    margin-left: 15px;
+    font-size: 1rem;               /* Espaço entre um botão e outro */
+    font-weight: bold;
+    transition: 0.3s;
+}       
+
+main {
+    padding: 20px;
+}
 
 body{
     background-color: #bcbcbc;
-    
     font-family: sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 h1{
