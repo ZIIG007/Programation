@@ -1,5 +1,5 @@
 .meu-topo {
-    background-color: #333;       /* Cor de fundo do retângulo */
+    background-color: #4a4a4a;       /* Cor de fundo do retângulo */
     display: flex;                  /* Ativa o modo "lado a lado" */
     justify-content: space-between; /* Joga o nome pra esquerda e botões pra direita */
     align-items: center;            /* Alinha tudo no centro verticalmente */
@@ -15,6 +15,15 @@
     font-weight: bold;
 }
 
+.link-topo {
+    text-decoration: none;          /* Remove o sublinhado do link no nome */
+    display: flex;                  /* Ajuda a manter o alinhamento correto */
+}
+
+.link-topo:hover {
+    opacity: 0.8;                   /* Dá uma leve transparência para mostrar que é clicável */
+}
+
 .botao {
     text-decoration: none;          /* Remove o sublinhado padrão de link */
     color: white;                 /* Cor do texto do botão */
@@ -26,8 +35,23 @@
     transition: 0.3s;
 }       
 
+
+
 main {
     padding: 20px;
+}
+
+#habilidades li {
+    line-height: 1.6;               /* Aumenta o espaço entre as linhas de texto */
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #f0f0f0;
+    border-left: 4px solid #4a4a4a;
+    border-radius: 5px;
+}
+
+#habilidades strong {
+    color:#333;
 }
 
 body{
