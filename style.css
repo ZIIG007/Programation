@@ -44,17 +44,17 @@ main {
 
 .container-foto {
     position: absolute;                /* Permite mover o círculo livremente */                           
-    top: 50px;                         /* Distância do topo do main */
-    right: 50px;                       /* Distância da lateral direita */                
-    width: 200px;                      /* Largura do círculo */
-    height: 200px;                     /* Altura do círculo (igual à largura para ser redondo) */
+    top: 160px;                         /* Distância do topo do main */
+    right: 60px;                       /* Distância da lateral direita */                
+    width: 220px;                      /* Largura do círculo */
+    height: 220px;                     /* Altura do círculo (igual à largura para ser redondo) */
     background-color: #ff4d4d;
     border-radius: 50%;                /* Torna o quadrado um círculo perfeito */
     display: flex;                     /* Centraliza a imagem dentro dele */
     justify-content: center;
     align-items: center;
     overflow: hidden;                  /* Corta a imagem para ela não sair do círculo */
-    border: 5px solid #ff4d4d;       /* Borda vermelha para dar acabamento */
+    border: 6px solid #ff4d4d;       /* Borda vermelha para dar acabamento */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
     z-index: 10;                        /* fique por cima do texto */
 }
@@ -63,6 +63,12 @@ main {
     width: 100%;                        /* A imagem ocupa toda a largura do círculo */
     height: 100%;                       /* A imagem ocupa toda a altura */
     object-fit: cover;                  /* Faz a imagem preencher o círculo sem esticar */
+}
+
+#habilidade ul{
+    list-style-type: none; 
+    padding: 0;
+    margin-right: 280px;                 /* empurra o texto para a esquerda, abrindo espaço para o círculo */
 }
 
 #habilidades li {
