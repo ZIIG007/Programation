@@ -110,7 +110,54 @@ h1{
 }
 
 /* CONFIGURAÇÃO PARA CELULARES */
-
+/* Configurações para telas de até 768px (Celulares e Tablets) */
 @media (max-width: 768px) {
     
+    .meu-topo {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;        /* Botões um embaixo do outro */ 
+        gap: 15px;                     /* Cria um espaço de 15px entre os botões */ 
+        margin-top: 10px;
+        width: 100%;                   /* Faz a nav ocupar a largura toda para alinhar botões */
+    }
+
+    .botao {
+        margin-left: 0;                /* Remove a margem lateral no mobile */ 
+        text-align: center;            /* Garante que o texto fique no meio do botão */ 
+    }
+
+    .container-foto {
+        position: absolute;
+               
+        /* TAMANHO */
+        width: 120px;                   /* Diminui tamanho no celular */
+        height: 120px;
+
+        top: 20px;                      /* Posicionamento bem rente à borda */
+        right: 10px;
+
+        border-width: 3px;
+    }
+
+    /* 3. Ajusta o tamanho das fontes para telas menores */
+    main h1 {
+        text-align: left;               /* Alinha o nome à esquerda para abrir espaço para a foto na direita */
+        padding-right: 130px;           /* Cria uma "parede" invisível para o texto não passar por baixo da foto */
+        font-size: 1.4rem;
+    }
+
+    #subtitulo-site {
+        text-align: left;
+        padding-right: 130px;
+    }
+
+    #habilidades li {
+        margin-right: 0;             /* Garante que a lista ocupe a largura total */
+    } 
 }
