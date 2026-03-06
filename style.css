@@ -108,3 +108,9 @@ h1{
     font-style: italic;
     color: #666;
 }
+
+/* CONFIGURAÇÃO PARA CELULARES */
+
+@media (max-width: 768px) {
+    
+}
