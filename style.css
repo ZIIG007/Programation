@@ -51,16 +51,17 @@
 }
 
 .redes-sociais a {
+    font-size: 1.8rem;
     color: #ff4d4d;
     text-decoration: none;
-    font-weight: bold;
     margin: 0 15px;
     transition: 0.3s;
 }
 
 .redes-sociais a:hover {
     color: white;
-    text-decoration: underline;
+    transform: translateY(-3px);        /* Move o ícone para cima ao passar o mouse */
+    display: inline-block;
 }
 
 
