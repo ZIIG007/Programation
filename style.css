@@ -265,20 +265,44 @@ p {
     
     .meu-topo {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px 15px;
         text-align: center;
+    }
+
+    .logo-topo {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;             /* Faz o corpo ter no mínimo a altura da tela inteira */
+        margin: 0;
+    }
+
+    main{
+        flex: 1;                        /* Faz o main ocupar o espaço restante entre o topo e o rodapé */
+    }
+
+    .meu-rodape {
+        margin-top: auto;              /* Empurra o rodapé para o final da página */
     }
 
     nav {
         display: flex;
         flex-direction: column;        /* Botões um embaixo do outro */ 
-        gap: 15px;                     /* Cria um espaço de 15px entre os botões */ 
-        margin-top: 10px;
-        width: 100%;                   /* Faz a nav ocupar a largura toda para alinhar botões */
+        justify-content: center;
+        gap: 10px;                     /* Cria um espaço de 15px entre os botões */ 
+        margin-top: 5px;
     }
 
     .botao {
+        padding: 6px 12px;
+        font-size: 0.8rem;
         margin-left: 0;                /* Remove a margem lateral no mobile */ 
+        flex: 1;
+        max-width: 150px;              /* Limita o tamanho máximo do botão para não ficar gigante */
         text-align: center;            /* Garante que o texto fique no meio do botão */ 
     }
 
